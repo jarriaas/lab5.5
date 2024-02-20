@@ -1,50 +1,95 @@
-body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+:root{
+	--main-bg-color:#E9E9E9;
+	--primary-text-color:#424242;
+	--accent-color:#FF3F3C;
+	--font: "Inter", sans-serif;
 }
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
+body{
+	background:var(--main-bg-color);
+	color:var(--primary-text-color);
+	font-family: var(--font);
+	margin:0;
+	padding:0;
 }
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+header{
+	padding:20px;
+	margin-bottom:100px;
 }
-
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+header h1{
+	margin:0;
+	font-weight:bold;
 }
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+main{
+	background: url('/images/polaroid.png') no-repeat center 100px;
+	margin: 0 auto;
+	width:1000px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
 }
-
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+h3{
+	text-align: center;
+	font-size: 2.5em;
 }
-
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero{
+	text-align: center;
+	min-height: 800px;
 }
-
-img.about {
-    opacity: 0.5;
+.hero h2{
+	font-size: 9em;
+	line-height:1em;
+	text-transform:uppercase;
+	margin: 0;
+}
+.details{
+	width: 800px;
+}
+.details ul li {
+	list-style-type:none;
+	margin:20px 0;
+	padding: 0 0 0 60px;
+}
+.details ul li.wifi{
+	background: url('/images/wifi-solid.svg') no-repeat center left;
+}
+.details ul li.cloud{
+	background: url('/images/cloud-arrow-up-solid.svg') no-repeat center left;
+}
+.details ul li.qr {
+	background: url('/images/qrcode-solid.svg') no-repeat center left;
+}
+.details ul li.photos{
+	background: url('/images/photo-film-solid.svg') no-repeat center left;
+}
+form{
+	padding:25px;
+	background: linear-gradient(180deg, #E2E2E2, #D6D7D6);
+	border-radius: 20px;
+	width: 600px;
+	display: flex;
+	justify-content: center;
+}
+.submit{
+	background-color: var(--accent-color);
+	color:white;
+	height: 50px;
+	padding: 15px;
+	margin: 0 10px;
+	border: none;
+	font: var(--font);
+}
+.submit:hover{
+	background-color:#db3937;
+}
+.email{
+	max-height: 50px;
+	width: 400px;
+	padding: 15px;
+	border: none;
+	font: var(--font);
+	background-color: #ECECEC;
+}
+p, li{
+	font-size: 1.5em;
 }
